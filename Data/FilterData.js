@@ -3,35 +3,74 @@ export const filterData = [
         placeholder: 'Purpose',
         queryName: 'purpose',
         items: [
-            { name: 'Buy', value: 'for-sale' },
-            { name: 'Rent', value: 'for-rent' },
+            {
+                name: 'Buy',
+                value: 'for-sale'
+            },
+            {
+                name: 'Rent',
+                value: 'for-rent'
+            },
         ],
     },
     {
         placeholder: 'Rent Frequency',
         queryName: 'rentFrequency',
         items: [
-            { name: 'Daily', value: 'daily' },
-            { name: 'Weekly', value: 'weekly' },
-            { name: 'Monthly', value: 'monthly' },
-            { name: 'Yearly', value: 'yearly' },
+            {
+                name: 'Daily',
+                value: 'daily'
+            },
+            {
+                name: 'Weekly',
+                value: 'weekly'
+            },
+            {
+                name: 'Monthly',
+                value: 'monthly'
+            },
+            {
+                name: 'Yearly',
+                value: 'yearly'
+            },
         ],
     },
     {
-        placeholder: 'Min Price(AED)',
+        placeholder: 'Min Price(Birr)',
         queryName: 'minPrice',
         items: [
-            { name: '10,000', value: '10000' },
-            { name: '20,000', value: '20000' },
-            { name: '30,000', value: '30000' },
-            { name: '40,000', value: '40000' },
-            { name: '50,000', value: '50000' },
-            { name: '60,000', value: '60000' },
-            { name: '85,000', value: '85000' },
+            { 
+                name: '10,000',
+                value: '10000' 
+            },
+            { 
+                name: '20,000',
+                value: '20000' 
+            },
+            { 
+                name: '30,000',
+                value: '30000' 
+            },
+            { 
+                name: '40,000',
+                value: '40000' 
+            },
+            { 
+                name: '50,000',
+                value: '50000' 
+            },
+            { 
+                name: '60,000',
+                value: '60000' 
+            },
+            { 
+                name: '85,000',
+                value: '85000' 
+            },
         ],
     },
     {
-        placeholder: 'Max Price(AED)',
+        placeholder: 'Max Price(Birr)',
         queryName: 'maxPrice',
         items: [
             { name: '50,000', value: '50000' },
@@ -133,20 +172,10 @@ export const filterData = [
         ],
     },
 ];
-
+// ********************************************* Hello ************************************************
 export const getFilterValues = (filterValues) => {
     const {
-        purpose,
-        rentFrequency,
-        categoryExternalID,
-        minPrice,
-        maxPrice,
-        areaMax,
-        roomsMin,
-        bathsMin,
-        sort,
-        locationExternalIDs,
-    } = filterValues;
+        purpose, rentFrequency, categoryExternalID, minPrice, maxPrice, areaMax, roomsMin, bathsMin, sort, locationExternalIDs, } = filterValues;
 
     const values = [
         {
