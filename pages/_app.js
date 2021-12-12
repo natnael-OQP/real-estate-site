@@ -7,7 +7,8 @@ import "nprogress/nprogress.css";
 import Layout from '../components/Layout';
 
 function MyApp({ Component, pageProps }) {
-  // NProgress.configure({ showSpinner: false });
+  NProgress.configure({ showSpinner: false });
+  // NProgress.configure({ trickleRate: 0.02, trickleSpeed: 0.5 });
   Router.events.on('routeChangeStart', () => {
     NProgress.start();
     NProgress.inc();
