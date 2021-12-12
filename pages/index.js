@@ -4,7 +4,6 @@ import {baseUrl,fetchApi} from '../fetchApi/fetchApi'
 import Property from '../components/Property';
 
 const Home = ({ propertiesForSale, propertiesForRent }) => {
-  console.log(propertiesForSale);
   return (
     <Box  >
       <Banner
