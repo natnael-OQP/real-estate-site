@@ -5,7 +5,7 @@ import Property from '../components/Property';
 
 const Home = ({ propertiesForSale, propertiesForRent }) => {
   return (
-    <Box  >
+    <Box w='full' >
       <Banner
         purpose='RENT A HOME'
         title1='Rental Homes for'
@@ -16,7 +16,7 @@ const Home = ({ propertiesForSale, propertiesForRent }) => {
         linkName='/Search?purpose=for-rent'
         imageUrl='https://bayut-production.s3.eu-central-1.amazonaws.com/image/145426814/33973352624c48628e41f2ec460faba4'
       />
-      <Flex flexWrap='wrap' w='full' mx='auto' >
+      <Flex flexWrap='wrap' justifyContent='center' >
         {
           propertiesForRent.map((property) => <Property property={property} key={property.id} /> )
         }
@@ -31,7 +31,7 @@ const Home = ({ propertiesForSale, propertiesForRent }) => {
         linkName='/Search?purpose=for-sale'
         imageUrl='https://bayut-production.s3.eu-central-1.amazonaws.com/image/110993385/6a070e8e1bae4f7d8c1429bc303d2008'
       />
-      <Flex flexWrap='wrap'>
+      <Flex  flexWrap='wrap' justifyContent='center' >
         {
           propertiesForSale.map((property) => <Property property={property} key={property.id} /> )
         }
